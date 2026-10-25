@@ -27,16 +27,16 @@ jobs:
           set -o pipefail
           printf '%s\n' \
             'import BarycentricClouds' \
-            '#print axioms RadialSample.disk_Wpow_mean' \
-            '#print axioms RadialSample.disk_Wpow_clt' \
-            '#print axioms RadialSample.integral_Wpow_mul_conj' \
-            '#print axioms RadialSample.qmom_eq_iff' \
-            '#print axioms RadialSample.main_le' \
-            '#print axioms RadialSample.main_optimal' \
-            '#print axioms RadialSample.tendstoInDistribution_Bimg_clt' \
-            '#print axioms RadialSample.tendstoInDistribution_joint_clt' \
-            '#print axioms IIDSample.criterion' \
+            '#print axioms Barycenter.disk_Wpow_mean' \
+            '#print axioms Barycenter.disk_Wpow_clt' \
+            '#print axioms Barycenter.RadialSample.integral_Wpow_mul_conj' \
+            '#print axioms Barycenter.RadialSample.qmom_eq_iff' \
+            '#print axioms Barycenter.RadialSample.main_le' \
+            '#print axioms Barycenter.main_optimal' \
+            '#print axioms Barycenter.RadialSample.tendstoInDistribution_Bimg_clt' \
+            '#print axioms Barycenter.RadialSample.tendstoInDistribution_joint_clt' \
+            '#print axioms Barycenter.IIDSample.criterion' \
             '#print axioms Barycenter.gauss_mean_value' \
-            '#print axioms RadialSample.integral_norm_sq_poly' > AxiomCheck.lean
+            '#print axioms Barycenter.RadialSample.integral_norm_sq_poly' > AxiomCheck.lean
           lake env lean AxiomCheck.lean | tee axioms.txt
           if grep -q sorryAx axioms.txt; then echo "Found sorry"; exit 1; fi
