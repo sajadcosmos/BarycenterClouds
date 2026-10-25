@@ -1,5 +1,7 @@
 # Lean 4 formalization: *Barycentric Clouds: Centers of Mass of Random Complex Numbers under Analytic Maps*
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23632394.svg)](https://doi.org/10.5281/zenodo.23632394)
+
 This repository contains the complete Lean 4 / Mathlib formalization accompanying
 
 > S. A. Sheikh,
@@ -48,6 +50,26 @@ An automated build (GitHub Actions, see the **Actions** tab) runs on every chang
 | `lean-toolchain` | Pinned Lean version |
 | `CITATION.cff` | Citation metadata (powers GitHub's "Cite this repository" button) |
 | `.github/workflows/lean.yml` | Automated build and axiom check |
+
+## How to cite
+
+If you use this formalization, please cite it as:
+
+> S. A. Sheikh, *Lean 4 formalization of "Barycentric Clouds: Centers of Mass of Random Complex Numbers under Analytic Maps,"* version 1.0, Zenodo (2026), GitHub: https://github.com/sajadcosmos/BarycenterClouds, doi:[10.5281/zenodo.23632394](https://doi.org/10.5281/zenodo.23632394).
+
+BibTeX:
+
+```bibtex
+@software{sheikh_barycentric_clouds_lean_2026,
+  author    = {Sheikh, Sajad Ahmad},
+  title     = {Lean 4 formalization of ``Barycentric Clouds: Centers of Mass of Random Complex Numbers under Analytic Maps''},
+  version   = {1.0},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.23632394},
+  url       = {https://github.com/sajadcosmos/BarycenterClouds}
+}
+```
 
 ## Contact
 
