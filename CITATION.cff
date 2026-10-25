@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this formalization, please cite it as below."
+type: software
+title: >-
+  Lean 4 formalization of "Barycentric Clouds: Centers of Mass of Random Complex Numbers under Analytic Maps"
+authors:
+  - family-names: Sheikh
+    given-names: Sajad Ahmad
+    affiliation: >-
+      Department of Mathematics, University of Kashmir, South Campus,
+      Anantnag, 192101, Jammu and Kashmir, India
+    email: sajadsheikh@uok.edu.in
+version: "1.0"
+repository-code: "https://github.com/sajadcosmos/BarycenterClouds"
+license: MIT
+keywords:
+  - Lean 4
+  - Mathlib
+  - formal verification
+  - random complex numbers
+  - analytic functions
+  - center of mass
